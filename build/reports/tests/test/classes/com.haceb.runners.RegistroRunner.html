@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - RegistroRunner</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>RegistroRunner</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.haceb.runners.html">com.haceb.runners</a> &gt; RegistroRunner</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1m20.91s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">50%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="Regisrtro de usuario exitoso"></a>
+<h3 class="failures">Regisrtro de usuario exitoso</h3>
+<span class="code">
+<pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@placeholder='Nombre *'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: net.thucydides.core.webdriver.DevToolsWebDriverFacade
+	at app//org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at app//org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at app//com.haceb.steps.PerfilSteps.validacionUsuario(PerfilSteps.java:23)
+	at app//com.haceb.steps.PerfilSteps$ByteBuddy$7tTlHZUO.validacionUsuario$accessor$EVHygL0K(Unknown Source)
+	at java.base@11.0.19/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.19/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.19/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.19/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:518)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:498)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:472)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:211)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:198)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:86)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//com.haceb.steps.PerfilSteps$ByteBuddy$7tTlHZUO.validacionUsuario(Unknown Source)
+	at app//com.haceb.stepDefinitions.RegistoStepDefinition.elUsuarioVisualizaInformacionDeSuPerfil(RegistoStepDefinition.java:54)
+	at ✽.el usuario visualiza informacion de su perfil.(file:///C:/Users/jorge/OneDrive/Documents/SQA/diana/salvacion/AutomatizacionHaceb/haceb/src/test/resources/features/RegistroHaceb.feature:9)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Agregar producto al carrito exitosamente</td>
+<td class="success">36.784s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">Regisrtro de usuario exitoso</td>
+<td class="failures">44.121s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Aca estan los elementos de cocina!
+[[[ChromeDriver: chrome on WINDOWS (3d71471b700ef24e15fbc40f7826e9e8)] -&gt; xpath: //li[@class='has-children cocina-line']//a[@class='nav__link']], [[ChromeDriver: chrome on WINDOWS (3d71471b700ef24e15fbc40f7826e9e8)] -&gt; xpath: //li[@class='has-children cocina-line']//a[@class='nav__link']], [[ChromeDriver: chrome on WINDOWS (3d71471b700ef24e15fbc40f7826e9e8)] -&gt; xpath: //li[@class='has-children cocina-line']//a[@class='nav__link']], [[ChromeDriver: chrome on WINDOWS (3d71471b700ef24e15fbc40f7826e9e8)] -&gt; xpath: //li[@class='has-children cocina-line']//a[@class='nav__link']], [[ChromeDriver: chrome on WINDOWS (3d71471b700ef24e15fbc40f7826e9e8)] -&gt; xpath: //li[@class='has-children cocina-line']//a[@class='nav__link']], [[ChromeDriver: chrome on WINDOWS (3d71471b700ef24e15fbc40f7826e9e8)] -&gt; xpath: //li[@class='has-children cocina-line']//a[@class='nav__link']], [[ChromeDriver: chrome on WINDOWS (3d71471b700ef24e15fbc40f7826e9e8)] -&gt; xpath: //li[@class='has-children cocina-line']//a[@class='nav__link']]]
+No le pudo dar click en comprar
+Aca llego nuestra automatizacion
+le pudo dar click en comprar
+Entramos a validar el carrito
+Validación exitosa del carrito
+142
+Llegamos aca 
+Llegamos aca 10172000
+Aca si? 
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/jorge/OneDrive/Documents/SQA/diana/salvacion/AutomatizacionHaceb/haceb/src/test/resources/features/AgregarProductoCarrito.feature
+[Test worker] INFO  - 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+-------------------------------------------------------------------------------------
+
+[Test worker] INFO  - Test Suite Started: Agregar producto al carrito
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/jorge/OneDrive/Documents/SQA/diana/salvacion/AutomatizacionHaceb/haceb/src/test/resources/features/RegistroHaceb.feature
+[Test worker] INFO  - Test Suite Started: Registro de usuario
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/jorge/OneDrive/Documents/SQA/diana/salvacion/AutomatizacionHaceb/haceb/src/test/resources/features/AgregarProductoCarrito.feature
+[Test worker] INFO  - Test Suite Started: Agregar producto al carrito
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/jorge/OneDrive/Documents/SQA/diana/salvacion/AutomatizacionHaceb/haceb/src/test/resources/features/AgregarProductoCarrito.feature
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Agregar producto al carrito exitosamente(agregar-producto-al-carrito;agregar-producto-al-carrito-exitosamente)
+--------------------------------------------------------------------------------
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.DriverProvider - Using WebDriverManager configuration for chrome
+[Test worker] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115
+[Test worker] WARN io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jorge\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [start-maximized, test-type, no-sandbox, lang=es, disable-popup-blocking, disable-download-notification, ignore-certificate-errors, allow-running-insecure-content, disable-translate, always-authorize-plugins, disable-extensions, remote-allow-origins=*, incognito, start-maximized, test-type, no-sandbox, lang=es, disable-popup-blocking, disable-download-notification, ignore-certificate-errors, allow-running-insecure-content, disable-translate, always-authorize-plugins, disable-extensions, remote-allow-origins=*, incognito], extensions: []}, prefs: {profile.default_content_settings.cookies: 1, profile.default_content_settings.local_storage: 1}}
+Aug 13, 2023 4:38:33 PM org.openqa.selenium.remote.RemoteWebDriver checkNonW3CCapabilities
+WARNING: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [prefs]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 47257
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1691962714.636][WARNING]: This version of ChromeDriver has not been tested with Chrome version 115.
+Aug 13, 2023 4:38:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+WARNING: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [prefs]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+Aug 13, 2023 4:38:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 115
+Aug 13, 2023 4:38:34 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.7.1` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Agregar producto al carrito exitosamente
+----------------------------------------------------------------------
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/jorge/OneDrive/Documents/SQA/diana/salvacion/AutomatizacionHaceb/haceb/src/test/resources/features/RegistroHaceb.feature
+[Test worker] INFO  - Test Suite Started: Registro de usuario
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/jorge/OneDrive/Documents/SQA/diana/salvacion/AutomatizacionHaceb/haceb/src/test/resources/features/RegistroHaceb.feature
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Regisrtro de usuario exitoso(registro-de-usuario;regisrtro-de-usuario-exitoso)
+--------------------------------------------------------------------------------
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [start-maximized, test-type, no-sandbox, lang=es, disable-popup-blocking, disable-download-notification, ignore-certificate-errors, allow-running-insecure-content, disable-translate, always-authorize-plugins, disable-extensions, remote-allow-origins=*, incognito, start-maximized, test-type, no-sandbox, lang=es, disable-popup-blocking, disable-download-notification, ignore-certificate-errors, allow-running-insecure-content, disable-translate, always-authorize-plugins, disable-extensions, remote-allow-origins=*, incognito], extensions: []}, prefs: {profile.default_content_settings.cookies: 1, profile.default_content_settings.local_storage: 1}}
+Aug 13, 2023 4:38:58 PM org.openqa.selenium.remote.RemoteWebDriver checkNonW3CCapabilities
+WARNING: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [prefs]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 3603
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1691962739.287][WARNING]: This version of ChromeDriver has not been tested with Chrome version 115.
+Aug 13, 2023 4:38:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+WARNING: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [prefs]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+Aug 13, 2023 4:38:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 115
+Aug 13, 2023 4:38:59 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.7.1` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] ERROR  - 
+  _____   ___   ___   _____     ___   ___   ___    ___    ___ 
+ |_   _| | __| / __| |_   _|   | __| | _ \ | _ \  / _ \  | _ \
+   | |   | _|  \__ \   | |     | _|  |   / |   / | (_) | |   /
+   |_|   |___| |___/   |_|     |___| |_|_\ |_|_\  \___/  |_|_\
+
+Regisrtro de usuario exitoso
+---------------------------------------------------------------
+[Test worker] ERROR  -     Test failed at step: Validacion de usuario registrado
+[Test worker] ERROR  -     Expected condition failed: waiting for visibility of element located by By.xpath: //input[@placeholder='Nombre *'] (tried for 20 second(s) with 500 milliseconds interval)Build info: version: '4.7.1', revision: 'c6795baf1a3'System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'Driver info: net.thucydides.core.webdriver.DevToolsWebDriverFacade
+?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
+?[32m?[1m??[0m Share your Cucumber Report with your team at ?[36m?[1m?[4mhttps://reports.cucumber.io?[0m          ?[32m?[1m??[0m
+?[32m?[1m??[0m Activate publishing with one of the following:                                    ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m Environment variable:                            ?[36mCUCUMBER_PUBLISH_ENABLED?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m JUnit:                                           ?[36m@CucumberOptions?[0m(publish = ?[36mtrue?[0m) ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m More information at ?[36mhttps://cucumber.io/docs/cucumber/environment-variables/?[0m      ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m Disable this message with one of the following:                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
+?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.0</a> at Aug 13, 2023, 4:39:44 PM</p>
+</div>
+</div>
+</body>
+</html>
